@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^0.7.0",
+    "@tresjs/nuxt": "^2.1.2",
     "@types/node": "^18.17.4",
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.6.5",
@@ -19,6 +20,8 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@nuxtjs/google-fonts": "^3.0.2"
+    "@nuxtjs/google-fonts": "^3.0.2",
+    "@tresjs/cientos": "^3.9.0",
+    "@tresjs/post-processing": "^0.7.1"
   }
 }

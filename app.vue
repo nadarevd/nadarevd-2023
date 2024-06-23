@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-row container lg:max-w-screen-lg mx-auto px-5">
-    <SectionsHeroSection />
+  <div class="flex flex-col container lg:max-w-screen-lg mx-auto px-5">
+    <NuxtPage />
   </div>
 </template>
 

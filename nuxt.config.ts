@@ -10,15 +10,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules : [
-    ['@nuxtjs/google-fonts', {
-      families: {
-        'Noto+Sans+JP': true,
-        'Inter': true,
-        'Mona Sans': true,
-        download: true,
-        inject: true,
-      },
-    }]
-  ]
+  modules : [['@nuxtjs/google-fonts', {
+    families: {
+      'Noto+Sans+JP': true,
+      'Inter': true,
+      'Mona Sans': true,
+      download: true,
+      inject: true,
+    },
+  }], '@tresjs/nuxt']
 })
