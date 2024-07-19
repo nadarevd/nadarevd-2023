@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  ssr: true,
   css: [
     '@/assets/css/style.css',
   ],
@@ -18,5 +19,5 @@ export default defineNuxtConfig({
       download: true,
       inject: true,
     },
-  }], '@tresjs/nuxt']
+  }], '@tresjs/nuxt', '@nuxt/image']
 })

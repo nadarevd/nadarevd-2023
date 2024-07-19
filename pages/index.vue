@@ -1,8 +1,10 @@
 <template>
   <div>
+    <SectionsNavBar />
     <SectionsHeroSection />
     <SectionsAboutSection />
     <SectionsSkillsSection />
+    <SectionsJobSection />
   </div>
 </template>
 
@@ -16,3 +18,6 @@ export default {
   }
 }
 </script>
+
+<style>
+</style>
