@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from 'vue'
 import { TresCanvas } from '@tresjs/core'
 
@@ -31,4 +31,4 @@ onLoop(({ delta, elapsed, clock, dt }) => {
 </template>
 
 <style>
-</style>
+</style> -->
