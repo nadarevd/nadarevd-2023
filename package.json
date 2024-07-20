@@ -20,6 +20,6 @@
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@nuxtjs/google-fonts": "^3.0.2",
+    "@nuxtjs/google-fonts": "^3.0.2"
   }
 }
