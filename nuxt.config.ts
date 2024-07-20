@@ -19,5 +19,5 @@ export default defineNuxtConfig({
       download: true,
       inject: true,
     },
-  }], '@tresjs/nuxt', '@nuxt/image']
+  }], '@nuxt/image']
 })
