@@ -30,28 +30,12 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li>
-                                    
-                                </li>
                             </ul>
                         </div>
-                        <div class="lg:w-6/12">
+                        <div class="lg:w-6/12 h-[600px]">
                             <transition name="fade" mode="out-in">
                                 <div v-if="currentJob" :key="currentJob.title">
-                                    <h2>{{ currentJob.title }}</h2>
-                                    <h3>{{ currentJob.company }}</h3>
-                                    <p v-html="currentJob.description"></p>
-                                    <h4>What I Use</h4>
-                                    <ul>
-                                        <li v-for="(tech, index) in currentJob.technologies" :key="index">{{ tech }}
-                                        </li>
-                                    </ul>
-                                    <h4>My Roles</h4>
-                                    <ul>
-                                        <li v-for="(role, index) in currentJob.roles" :key="index" v-html="role"></li>
-                                    </ul>
-                                    <h4>Goals</h4>
-                                    <p>{{ currentJob.goals }}</p>
+                                    <SectionsComponentsJobDetails :currentJob="currentJob" />
                                 </div>
                             </transition>
                         </div>
@@ -69,13 +53,20 @@ export default {
             jobs: [
                 {
                     title: 'Software Developer',
-                    company: 'Descartes',
+                    company: 'Descartes Systems Group',
+                    location: 'Waterloo, ON (Remote)',
+                    date: 'March 2023 - Present',
                     logo: '/descartes.svg',
                     class: 'h-4',
-                    description: 'I am part of a talented team of developers that are dedicated to creating solutions in <b>logistics</b> and supply chain management.',
-                    technologies: ['Vue.JS', 'Ruby on Rails', 'SQL', 'Azure DevOps', 'Freight Brokering'],
-                    roles: ['Analyze existing solutions to propose design and functional improvements', 'Refactor existing code to better structure code', 'Debug code as code is updated throughout the development process', 'Create solutions for new services'],
-                    goals: 'I am aiming to become a full-stack developer. I consider myself to be a professional Vue.JS developer; However, I want to dive deeper into more areas of Software Development such as back-end, marketing, and business development. My plan is to master Ruby on Rails.'
+                    description: 'From implementing/revamping features and engaging in complex problem-solving, I play a crucial role in the modernization of one of the biggest TMS platforms in North America.',
+                    technologies: ['vuejs', 'rails', 'nodejs', 'html', 'css', 'javascript',],
+                    roles: [
+                        'Engineering user-facing features with Vue.js, translating UI/UX wireframes into high-performing, scalable solutions, reducing page load times by 30%', 
+                        'Streamlining backend functionality by implementing new models and debugging existing Ruby on Rails code, enhancing overall performance.', 
+                        'Boosting user efficiency by 20%+ through optimized UX design, enabling faster task completion within the app.', 
+                        'Spearheading large-scale feature implementations and projects, guiding team members to elevate code quality and consistency',
+                        'Modernizing the codebase by integrating Vuex for state management, Vue Router for improved navigation, and Vuex ORM for better data handling, enhancing code maintainability and scalability.'
+                    ]
                 },
                 {
                     title: 'Lead Frontend Developer',
